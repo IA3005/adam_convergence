@@ -135,6 +135,6 @@ if  __name__ == "__main__":
                                "test_loss":test_loss, "test_acc":test_acc }
     
     #save results 
-    file = open(path+f"results.pkl", "rb")
+    file = open(path+f"results.pkl", "wb")
     pickle.dump(res, file)
     file.close()
