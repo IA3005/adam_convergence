@@ -37,7 +37,7 @@ def train_classifier(num_epochs, batch_size, criterion, optimizer, model, datalo
         correct = 0.0
         total = 0
         fix_seed(seed)
-        for (X, y) in tqdm(dataloader):
+        for (X, y) in dataloader:
             X = X.to(device)
             y = y.to(device)
             outputs = model(X)
